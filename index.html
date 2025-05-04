@@ -8,8 +8,10 @@
       description="Sofia's Portfolio"
     />
     <title>Sofia's Portfolio</title>
-    <link rel="icon" href="assets/sesame-xicon.png" type="image/x-icon" />
+    <link rel="icon" href="assets/me.gif" type="image/x-icon" />
     <link rel="stylesheet" href="index.css" />
+
+    <!-- Bootstrap-->
     <link
       href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css"
       rel="stylesheet"
@@ -21,6 +23,8 @@
       integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz"
       crossorigin="anonymous"
     ></script>
+
+    <!-- Pixelify Sans Font-->
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
@@ -28,16 +32,10 @@
       rel="stylesheet"
     />
   </head>
-  <style>
-    body {
-      font-family: "Pixelify Sans", sans-serif;
-      font-optical-sizing: auto;
-      font-weight: 200;
-      font-style: normal;
-    }
-  </style>
+  
   <body>
-    <nav class="navbar navbar-expand-sm gradient-custom sticky-top">
+    <!-- Navigation Bar Section-->
+    <nav class="navbar navbar-expand-md gradient-custom sticky-top">
       <div class="container-fluid">
         <a class="navbar-brand text-white" href="index.html#header">
           SOFIA GUARISMA
@@ -54,39 +52,184 @@
           <span class="navbar-toggler-icon"></span>
         </button>
         <div class="collapse navbar-collapse" id="navbarNav">
-          <ul class="navbar-nav ms-auto">
-            <li class="nav-item">
-              <a href="#sketches" class="retro-button">🏠 <u>H</u>ome</a>
+          <ul class="navbar-nav ms-auto text-center">
+            <li class="nav-item my-2">
+              <a href="index.html" class="retro-button">🏠 <u>H</u>ome</a>
             </li>
-            <li class="nav-item">
-              <a href="#sketches" class="retro-button">📁 <u>P</u>rojects</a>
+            <li class="nav-item my-2">
+              <a href="about.html" class="retro-button">👤 <u>A</u>bout</a>
             </li>
-            <li class="nav-item">
-              <a class="retro-button" href="#critiques">📂<u>R</u>esume</a>
+            <li class="nav-item my-2">
+              <a href="index.html#selected_projects" class="retro-button">💼 <u>W</u>orks</a>
             </li>
-            <li class="nav-item">
-              <a class="retro-button" href="#prototype">💬 <u>C</u>ontact</a>
+            <li class="nav-item my-2">
+              <a class="retro-button" href="assets/Sofia_Guarisma_Resume.pdf">📂<u>R</u>esume</a>
+            </li>
+            <li class="nav-item my-2">
+              <a class="retro-button" href="mailto:sofia_guarisma@brown.edu">💬 <u>C</u>ontact</a>
             </li>
           </ul>
         </div>
       </div>
     </nav>
 
-    <div class="container-fluid row" id="header">
-      <div class="col-12 text-center">
-        <h1 style="color: rgb(89, 33, 207)">Portfolio</h1>
-        <b>
-          <p>
-            <select>
-              <option value="Jack-Of-All-Trades">Jack-of-all-trades</option>
-              <option value="Frontend Developer">Frontend Developer</option>
+    <!-- Header Section-->
+    <div class="container-fluid py-5" id="header">
+      <div class="row align-items-center">
+        <!-- Main Image -->
+        <div class="col-12 col-md-6 text-center mb-4 mb-md-0 image-container">
+          <div class="text-center">
+            <img src="assets/Me.gif" class="img-fluid rounded" style="width:400px;" alt="gif of a pixelated version of Sofia">
+          </div>
+        </div>
+    
+        <!-- Tagline and Main Description -->
+        <div class="col-12 col-md-6 text-center text-md-start">
+          <h1 class="typewriter display-2">Hello! I'm Sofia</h1>
+          <p class="tagline fw-bold mt-3">
+              I am a  
+            <select class="form-select d-inline w-auto mx-1" id="roleSelect">
+                <option value="Full-Stack Developer">Full-Stack Developer</option>
+                <option value="Web Developer">Web Developer</option>
+                <option value="Sociologist">Sociologist</option>
             </select>
           </p>
-        </b>
+          
+          <p class="tagline">
+            Currently studying CS and Sociology at 
+            <a class="hover-highlight fw-bold" href="https://www.brown.edu/">Brown U</a>. Previously interned at 
+            <a class="hover-highlight fw-bold" href="https://aws.amazon.com/">AWS</a>.
+          </p>
+          
+          <p class="tagline">
+            I like thinking about 
+            <b id="topic1" class="hover-highlight fw-bold">human-computer interaction</b>, 
+            <b id="topic2" class="hover-highlight fw-bold">tech ethics</b>, and 
+            <b id="topic3" class="hover-highlight fw-bold">user experience</b>.
+          </p>
+          
+          <a href="https://www.linkedin.com/in/sofia-guarisma-b683b1237/"><img class= "overlay-text img-fluid" src="assets/old_linkedin.png" alt="Retro Linkedin Logo"></a>
+          <a href="https://github.com/sguarisma">
+            <img class= "overlay-text img-fluid" src="assets/git.png" alt="GitHub Logo">
+          </a>
+        </div>
       </div>
-      <hr class="border-10" />
     </div>
 
-    <div class="container mx-auto" id="sketches"></div>
+    <!-- Selected Projects Section-->
+    <br id="selected_projects">
+    <br>
+    <br>
+    <div class="container mx-auto">
+      <h1>Selected Projects</h1>
+      <section class="card-container">
+        <!-- Sesame Project -->
+        <a href="sesame.html" class="card">
+          <img src="assets/sesame.gif" alt="Gif of Project Sesame Design" class="card-image">
+          <div class="card-content">
+            <h2><b>Sesame Care</b> | Spring '25</h2>
+            <p>A patient education redesign focused on accessibility, personalization, and clarity in healthcare information.</p>
+            <div class="tags">
+              <span class="tag">UX Design</span>
+              <span class="tag">Balsamiq</span>
+              <span class="tag">Figma</span>
+            </div>
+          </div>
+        </a>
+      
+        <!-- Progreso Latino Project -->
+        <a href="progreso.html" class="card">
+          <img src="assets/progreso.gif" alt="Gif of Project Progreso Latino Web Redesign" class="card-image">
+          <div class="card-content">
+            <h2><b>Progreso Latino</b> | Spring '25</h2>
+            <p>Responsive web page redesign for a local nonprofit, improving navigation, responsiveness, and community visibility.</p>
+            <div class="tags">
+              <span class="tag">Front-End Development</span>
+              <span class="tag">Figma</span>
+              <span class="tag">Responsive Design</span>
+            </div>
+          </div>
+        </a>
+      
+        <!-- Indy Project -->
+        <a href="indy.html" class="card">
+          <img src="assets/indy.gif" alt="Gif of Project College Hill Independent Dropdown Redesign" class="card-image">
+          <div class="card-content">
+            <h2><b>The College Hill Independent Dropdown</b> | Spring '25</h2>
+            <p>Dropdown menu redesign for a campus publication, enhancing clarity, keyboard navigation, and visual consistency.</p>
+            <div class="tags">
+              <span class="tag">UI Design</span>
+              <span class="tag">Figma</span>
+              <span class="tag">Accessible Design</span>
+            </div>
+          </div>
+        </a>
+      
+        <!-- StudBud Project -->
+        <a href="studbud.html" class="card">
+          <img src="assets/studbud.gif" alt="Gif of StudBud Project" class="card-image">
+          <div class="card-content">
+            <h2><b>StudBud</b> | Fall '24</h2>
+            <p>Full-stack study-buddy matching app using React and Java, designed to support peer learning and community building.</p>
+            <div class="tags">
+              <span class="tag">Full-Stack Development</span>
+              <span class="tag">API Integration</span>
+              <span class="tag">TypeScript</span>
+              <span class="tag">CSS</span>
+              <span class="tag">React</span>
+              <span class="tag">Java</span>
+              <span class="tag">Firebase</span>
+            </div>
+          </div>
+        </a> 
+      </section>
+    </div>
+
+    <!-- Footer Section -->
+    <hr class="border-10" />
+    <div class="d-inline w-auto mx-1 gradient-custom">
+      <footer class="container" id="footer">
+        <p> 🪤 Designed on Figma, Developed on VSCode, Made with Love </p>
+      </footer>
+    </div>
   </body>
+
+  <!-- JavaScript for Changing Tagline Descriptions-->
+  <script>
+    const roleTopics = {
+      "Full-Stack Developer": [
+        "human-centered design",
+        "end-to-end user flows",
+        "playful and intuitive interfaces"
+      ],
+      "Web Developer": [
+        "particapatory design",
+        "accessible web design",
+        "visual storytelling"
+      ],
+      "Sociologist": [
+        "migration and identity",
+        "sociotechnical systems",
+        "ethics of technology"
+      ]
+    };
+  
+    const roleSelect = document.getElementById("roleSelect");
+    const topic1 = document.getElementById("topic1");
+    const topic2 = document.getElementById("topic2");
+    const topic3 = document.getElementById("topic3");
+  
+    roleSelect.addEventListener("change", function () {
+      const topics = roleTopics[this.value];
+      [topic1, topic2, topic3].forEach(el => el.style.opacity = 0);
+  
+      setTimeout(() => {
+        topic1.textContent = topics[0];
+        topic2.textContent = topics[1];
+        topic3.textContent = topics[2];
+  
+        [topic1, topic2, topic3].forEach(el => el.style.opacity = 1);
+      }, 200);
+    });
+  </script>
 </html>

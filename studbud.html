@@ -1,0 +1,245 @@
+<!DOCTYPE html>
+<html lang="en">
+
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="Sesame Care Iterative Redesign">
+    <link rel="icon" href="assets/me.gif" type="image/x-icon" />
+    <title>Project: StudBud</title>
+    <link rel="stylesheet" href="project.css" />
+    <link rel="stylesheet" href="index.css" />
+    <!-- Bootstrap-->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM"
+      crossorigin="anonymous"
+    />
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz"
+      crossorigin="anonymous"
+    ></script>
+
+    <!-- Pixelify Sans Font-->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Pixelify+Sans:wght@400..700&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body data-bs-spy="scroll" data-bs-target="#sideNav" data-bs-offset="120" tabindex="0">
+
+    <!-- Navigation Bar -->
+    <nav class="navbar navbar-expand-md gradient-custom sticky-top">
+      <div class="container-fluid">
+        <a class="navbar-brand text-white" href="index.html#header">
+          SOFIA GUARISMA
+        </a>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarNav"
+          aria-controls="navbarNav"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <ul class="navbar-nav ms-auto text-center">
+            <li class="nav-item my-2">
+              <a href="index.html" class="retro-button">🏠 <u>H</u>ome</a>
+            </li>
+            <li class="nav-item my-2">
+              <a href="about.html" class="retro-button">👤 <u>A</u>bout</a>
+            </li>
+            <li class="nav-item my-2">
+              <a href="index.html#selected_projects" class="retro-button">💼 <u>W</u>orks</a>
+            </li>
+            <li class="nav-item my-2">
+              <a class="retro-button" href="assets/Sofia_Guarisma_Resume.pdf">📂<u>R</u>esume</a>
+            </li>
+            <li class="nav-item my-2">
+              <a class="retro-button" href="mailto:sofia_guarisma@brown.edu">💬 <u>C</u>ontact</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+      
+    <!-- Header Section -->
+    <div style="background-color: rgb(229, 220, 237)" >
+      <div class="container text-center mb-5" id="project-header">
+        <br>
+        <h1 class="display-4" style="color:rgb(89, 33, 207)">StudBud</h1>
+        <br>
+        <h3 class="lead">Developing a social learning platform that helps Brown University students find peers in their classes to collaborate more effectively.</h3>
+
+        <div class="row mt-4">
+          <div class="col-md-3">
+            <h6 class="text-uppercase text-muted"><b>Role</b></h6>
+            <p>Full-Stack Developer</p>
+          </div>
+          <div class="col-md-3">
+            <h6 class="text-uppercase text-muted"><b>Team</b></h6>
+            <p>Alessandro Guerrero, Sofia Guarisma, Fabio Villatoro, América Marín</p>
+          </div>
+          <div class="col-md-3">
+            <h6 class="text-uppercase text-muted"><b>Skills/Tools</b></h6>
+              <span class="case_tag">React</span>
+              <span class="case_tag">Firebase</span>
+              <span class="case_tag">Clerk</span>
+              <span class="case_tag">TypeScript/CSS</span>
+          </div>
+          <div class="col-md-3">
+            <h6 class="text-uppercase text-muted"><b>Duration</b></h6>
+            <p>4 Weeks - Fall 2024</p>
+          </div>
+        </div>
+        <br>
+        <a href="https://github.com/sguarisma04/studbud">
+        <img src="/assets/studbud.gif" class="img_main rounded shadow mb-3 w-50" alt="Gif of StudBud project runthrough">
+      </a>
+      </div>
+
+    </div>
+
+    <!-- Sidebar -->
+    <div class="container-fluid">
+      <div class="row">
+        <aside class="col-md-2 d-none d-md-block sidebar-nav">
+          <nav id="sideNav" class="position-sticky" style="top: 120px;">
+            <br>
+            <ul class="nav flex-column small">
+              <li><a class="nav-link active" href="#project-header">Overview</a></li>
+              <li><a class="nav-link" href="#context">Context</a></li>
+              <li><a class="nav-link" href="#research">Research</a></li>
+              <li><a class="nav-link" href="#process">Process</a></li>
+              <li><a class="nav-link" href="#solution">Solution</a></li>
+              <li><a class="nav-link" href="#learnings">Learnings</a></li>
+            </ul>
+          </nav>
+        </aside>
+
+        <!-- Main content -->
+        <main class="ms-auto px-4">
+          <div class="container mx-auto" id="context">
+            <br>
+            <h3>Context</h3>
+            <p>
+              I collaborated with a four-person team, where each of us owned major features of the project over a 4-week sprint. We used React, Firebase, Clerk, TypeScript + CSS, and <a href=https://www.figma.com/proto/NE2j1jqHTKSuhl35YdT93w/StudBud-Prototype?node-id=5-3494&p=f&t=fAbZbc4gZzTdGE8K-1&scaling=min-zoom&content-scaling=fixed&page-id=0%3A1>Figma</a> to design and build a responsive web app from scatch.
+              As a full-stack developer, I worked on the <b>user registration, messaging, and peer matching components</b> for StudBud.
+
+            </p>
+            <h3>Problem</h3>
+            <p> Students in large lecture-based college courses often struggle to form study groups. Despite wanting to collaborate, <b>logistical and social barriers</b>, like not knowing anyone in the class or feeling awkward reaching out, makes it difficult to connect with peers.
+              Based on both scholarly research and user interviews with students at Brown, we found that 
+              <ul>
+                <li>Students with stronger academic peer networks experienced higher levels of motivation and learning</li>
+                <li>Students who did not participate in study groups most commonly cited logistical difficulties, like not being able to find a group, as the cause.</li>
+                <li>Access to collaborative study groups would save significant time, energy, and stress.</li>
+              </ul>
+              While tutoring apps and Canvas discussions exist, none offer an intutiive, class-specific social experience. <b>Studbud was designed to fill this gap</b>, matching students based on shared courses and enabling meaningful peer interaction.
+
+
+            </p>
+          
+          </div>
+          <div class="container mx-auto" id="research">
+            <h3>Research</h3>
+            <p>
+              To begin, we combined quantitiative data, interviews with 25 Brown students, and competitive analysis to inform our product design. We found that students wanted to find study partners based on their current courses,
+              a profile section with bios and photos increases trust and approachability, and messaging needed to be simple, low-pressure, and available asynchronously.
+              </p>
+              <p><b>User personas</b> we built showed a strong preference for convenience, privacy, and the ability to revisit matches and message before big exams. This led us to prioritize six core features:
+    
+            </p>
+            <ol>
+              <li>University email authentication</li>
+              <li>Editable user profiles</li>
+              <li>Course input & validation</li>
+              <li>Course-based peer matching</li>
+              <li>Direct messaging with canned starter phrases</li>
+              <li>Secure data storage</li>
+            </ol>
+          </div>
+
+          <div class="container mx-auto" id="process">
+            <h3>Process</h3>
+            <p>We followed a modular design approach and split development by feature area. My main responsibility was the Authentication module, Messaging module, and Matching module including:</p>
+            <ol>
+              <li>Clerk authentication with @brown.edu email and SSO</li>
+              <div class="container mx-auto">
+                <img src="assets/StudBud/studbud_clerk.png" class="img-fluid" alt="StudBud's Clerk Sign in Page">
+              </div>
+              <br>
+              <li>Cross-User Messaging Functionality</li>
+              <div class="container mx-auto">
+                <img src="assets/StudBud/studbud_chat.png" class="img-fluid" alt="Studbud's Messaging Page">
+              </div>
+              <br>
+              <li>Peer Course Matching</li>
+              <div class="container mx-auto">
+                <img src="assets/StudBud/studbud_peer.png" class="img-fluid" alt="Studbud's Home Page">
+              </div>
+            </ol>
+            <p>This process included both frontend development using React and Clerk session management and data storage using Firebase Firestore for persistance across user sessions. I also helped integrate <b>API requests</b> to the Courses@Brown API, an API containing up-to-date information on all of Brown University's courses.</p>
+          </div>
+
+          <div class="container mx-auto" id="solution">
+            <h3>Solution</h3>
+            <p>Overall, the completed StudBud prototype allows students to:</p>
+            <ul>
+              <li>Register securly with a Brown email and SSO</li>
+              <li>Build a profile that reflects their interests and study preferences</li>
+              <li>Enter and standardize their current courses</li>
+              <li>View classmates by shared courses on a dynamic homepage</li>
+              <p>Match and message peers with intuitive chat tools and conversation starters</p>
+            </ul>
+            <p>Our chat system supports unlimited messages (text, images, and emojis), asynchronous delivery (with timestamps), and persistent conversations with Firebase storage.</p>
+
+              <div class="text-center">
+                For the complete github of this project, click the image below:
+                <a href="https://github.com/sguarisma04/studbud">
+                  <img src="assets/StudBud/studbud_title.png" class="img-fluid rounded shadow mb-3" alt="The StudBud Title Page">
+                </a>
+                  More information on our Process can be found <a href="assets/StudBud_ Term Project Requirements and Specification.pdf">here</a>
+              </div>
+          </div>
+
+          <div class="container mx-auto" id="learnings">
+            <h3>Learnings</h3>
+            <p>
+              This project was an essential learning opportunity in both full-stack development and team collaboration. This helped me develop across both
+              technical and human-centered design dimensions. I leaned how to translate insights from user interviews into tangible features that directly addressed students' needs.
+              I also gained hands-on experience managing and persisting user sessions and profile data using <b>Firebase</b>, while integrating <b>Clerk</b> for secure authentication. 
+              </p>
+              <p>
+              In the future, this project could be built upon by adding components like:
+            </p>
+            <ul>
+              <li>Advanced AI matching to suggest study partners based on profile information</li>
+              <li>Greater integration with school systems so that students could automatically link their registered courses without the need to manually input course information</li>
+              <li>Calendar integration to easily plan study sessions within the app</li>
+            </ul>
+            <p> One of the most valuable takeaways was learning how to work modularly in a <b>collaborative</b> team, balancing <b>independent ownership</b> of features with regular 
+              integration and feedback cycles. I became more confident writing scalable React components, working with real-time databases, and navigating version control in a group setting. Overall, StudBud was my <b>first full developed full-stack project</b>, one that taught 
+              me not just to build software, but how to center users in the process and collaborate efficiently to bring an idea to life.
+            </p>
+          </div>
+        </main>
+      </div>
+    </div>
+  </body>
+
+  <!-- Footer Section-->
+  <hr class="border-10" />
+  <footer class="container" id="footer">
+    <p> Designed on Figma, Developed on VSCode, Made with Love </p>
+
+  </footer>
+</html>

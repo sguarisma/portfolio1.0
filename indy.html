@@ -1,0 +1,387 @@
+<!DOCTYPE html>
+<html lang="en">
+
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="Sesame Care Iterative Redesign">
+    <link rel="icon" href="assets/me.gif" type="image/x-icon" />
+    <title>Project: The College Hill Independent</title>
+    <link rel="stylesheet" href="project.css" />
+    <link rel="stylesheet" href="index.css" />
+    <!-- Bootstrap-->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM"
+      crossorigin="anonymous"
+    />
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz"
+      crossorigin="anonymous"
+    ></script>
+
+    <!-- Pixelify Sans Font-->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Pixelify+Sans:wght@400..700&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body data-bs-spy="scroll" data-bs-target="#sideNav" data-bs-offset="120" tabindex="0">
+
+    <!-- Navigation Bar -->
+    <nav class="navbar navbar-expand-md gradient-custom sticky-top">
+      <div class="container-fluid">
+        <a class="navbar-brand text-white" href="index.html#header">
+          SOFIA GUARISMA
+        </a>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarNav"
+          aria-controls="navbarNav"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <ul class="navbar-nav ms-auto text-center">
+            <li class="nav-item my-2">
+              <a href="index.html" class="retro-button">🏠 <u>H</u>ome</a>
+            </li>
+            <li class="nav-item my-2">
+              <a href="about.html" class="retro-button">👤 <u>A</u>bout</a>
+            </li>
+            <li class="nav-item my-2">
+              <a href="index.html#selected_projects" class="retro-button">💼 <u>W</u>orks</a>
+            </li>
+            <li class="nav-item my-2">
+              <a class="retro-button" href="assets/Sofia_Guarisma_Resume.pdf">📂<u>R</u>esume</a>
+            </li>
+            <li class="nav-item my-2">
+              <a class="retro-button" href="mailto:sofia_guarisma@brown.edu">💬 <u>C</u>ontact</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+      
+    <!-- Header Section -->
+    <div style="background-color: rgb(229, 220, 237)" >
+      <div class="container text-center mb-5" id="project-header">
+        <br>
+        <h1 class="display-4" style="color:rgb(89, 33, 207)">The College Hill Independent</h1>
+        <br>
+        <h3 class="lead">Making dropdown components more accessible, intuitive, and inclusive for all users. </h3>
+
+        <div class="row mt-4">
+          <div class="col-md-4">
+            <h6 class="text-uppercase text-muted"><b>Role</b></h6>
+            <p>UX/UI Designer and Researcher</p>
+          </div>
+          <div class="col-md-4">
+            <h6 class="text-uppercase text-muted"><b>Skills/Tools</b></h6>
+              <span class="case_tag">Figma</span>
+          </div>
+          <div class="col-md-4">
+            <h6 class="text-uppercase text-muted"><b>Duration</b></h6>
+            <p>2 Weeks - February 2025</p>
+          </div>
+        </div>
+        <br>
+        <a href="https://www.figma.com/proto/nuZe5N7evUbJ4VB5eyuWnc/Untitled?node-id=7-5&t=BU10W62wvtkLve0A-1">
+          <img src="/assets/Indy/results4.png" class="img_main w-50" alt="Final Image of The Indy Dropdown Redesign">
+        </a>
+      </div>
+      <br>
+    </div>
+
+    <!-- Sidebar -->
+    <div class="container-fluid">
+      <div class="row">
+        <aside class="col-md-2 d-none d-md-block sidebar-nav">
+          <nav id="sideNav" class="position-sticky" style="top: 120px;">
+            <br>
+            <ul class="nav flex-column small">
+              <li><a class="nav-link active" href="#project-header">Overview</a></li>
+              <li><a class="nav-link" href="#context">Context</a></li>
+              <li><a class="nav-link" href="#research">Research</a></li>
+              <li><a class="nav-link" href="#process">Process</a></li>
+              <li><a class="nav-link" href="#solution">Solution</a></li>
+              <li><a class="nav-link" href="#learnings">Learnings</a></li>
+            </ul>
+          </nav>
+        </aside>
+
+        <!-- Main content -->
+        <main class="ms-auto px-4">
+          <div class="container mx-auto" id="context">
+            <br>
+            <h3>Context</h3>
+            <p>
+              Over the course of two weeks, I focused on analyzing and redesigning a dropdown menu, prioritizing accessibility and usability. For this case study, I used the dropdown menu found in the navigation bar of a campus newspaper's website, 
+              <i>The College Hill Independent</i>.
+            </p>
+            <h3>Problem</h3>
+            <p> Dropdown menus are one of the most common UI components used across web and desktop
+              interfaces. Despite their simplicity, they often <b>fall short in accessibility, efficiency, and keyboard compatability</b>.
+              This project explored how dropdowns interact with different user inputs and proposed a redesigned version that better support 
+              <select>
+                <option>
+                  accessible
+                </option>
+                <option>
+                  efficient
+                </option>
+                <option>learnable</option>
+                <option>memorable</option>
+              </select>
+              interactions.
+            </p>
+          </div>
+
+          <div class="container mx-auto" id="research">
+            <h3>Research</h3>
+            <p>
+              To begin, I analyzed dropdown implementations from three platforms:
+              <ol>
+                <li><a href= "https://www.brown.edu/" class="hover-highlight">Brown University's website (browser-based dropdown)</a></li>
+                <li><a href= "https://code.visualstudio.com/" class="hover-highlight">Visual Studio Code (desktop app dropdown)</a></li>
+                <li><a href= "https://theindy.org/" class="hover-highlight">The College Hill Independent Website (my primary redesign focus)</a></li>
+              </ol>
+              I evaluate each by input type interactions (mouse, keyboard, touch), output cues (visual and screen reader support), and key UX factors, like learnability, memorability, and efficiency. Here were my key findings:
+            </p>
+            <ul>
+              <li><b>Brown University's website</b> had the most accessible implementation of the dropdown menu as it fully supported all input types, full navigation with screen reader output. and had clear visual cues through borders, focus states, etc.</li>
+              <li><b>VSCode</b> also supported multiple input types but lacked clear keyboard input usage, making it less intutive to use. </li>
+              <li><b>The College Hill Independent's website </b> was the least accessible. Keyboard users couldn't fully navigate or select dropdown options, no clear hover outputs or focus indicators existed, and screen readers couldn't asccess dropdown items.</li>
+            </ul>
+            <div class="contexts_list">
+              <div class="context">
+                <span class="number">01</span>
+                <div class="context-content">
+                  <p class="fw-bold">
+                    Brown University Website</p>
+                
+                  <p class="description">
+                    <div class="slideshow" style="width: 100%">
+                      <img
+                        class="slide_brown"
+                        src="assets/Indy/brown_collapsed.png"
+                        style="width: 100%; margin: auto"
+                        alt="Picture of Brown University's collapsed dropdown"
+                      />
+                      <img
+                        class="slide_brown"
+                        src="assets/Indy/brown_expanded.png"
+                        style="width: 100%; margin: auto"
+                        alt="Picture of Brown University's expanded dropdown"
+                      />
+                      <img
+                        class="slide_brown"
+                        src="assets/Indy/brown_option_hover.png"
+                        style="width: 100%; margin: auto"
+                        alt="Picture of Brown University's hovered over dropdown"
+                      />
+                    </div>               
+                  </p>
+                </div>
+              </div>
+              <div class="context">
+                <span class="number">02</span>
+                <div class="context-content">
+                  <p class="fw-bold">
+                    Visual Studio Code Desktop App</p>
+                  <p class="description">
+                    <div class="slideshow" style="width: 100%">
+                      <img
+                        class="slide_ikea"
+                        src="assets/Indy/vscode_collapsed.png"
+                        style="width: 100%; margin: auto"
+                        alt="Picture of VSCodes's collapsed dropdown"
+                      />
+                      <img
+                        class="slide_ikea"
+                        src="assets/Indy/vscode_hover.png"
+                        style="width: 100%; margin: auto"
+                        alt="Picture of VSCodes's hovered over dropdown"
+                      />
+                      <img
+                        class="slide_ikea"
+                        src="assets/Indy/vscode_expand.png"
+                       style="width: 100%; margin: auto"
+                       alt="Picture of VSCodes's expanded dropdown"
+                      />
+                    </div>
+                  </p>
+                </div>
+              </div>
+              <div class="context">
+                <span class="number">03</span>
+                <div class="context-content">
+                  <p class="fw-bold">
+                    The College Hill Independent Website
+                  </p>
+                  <p class="description">
+                    <div class="slideshow" style="width: 100%">
+                      <img
+                        class="slide_indy"
+                        src="assets/Indy/indy_collapsed.png"
+                        style="width: 100%; margin: auto"
+                        alt="Picture of the Indy's collapsed dropdown"
+                      />
+                      <img
+                        class="slide_indy"
+                        src="assets/Indy/indy_expanded.png"
+                        style="width: 100%; margin: auto"
+                        alt="Picture of the Indy's expanded dropdown"
+                      />
+                      <img
+                        class="slide_indy"
+                        src="assets/Indy/indy_option_hover.png"
+                        style="width: 100%; margin: auto"
+                        alt="Picture of the Indy's hovered over dropdown"
+                      />
+                    </div>
+                  </p>
+                </div>
+              </div>
+            </div>
+            <p>This analysis shaped my understanding of what features were essential for a truly accessible dropdown and where existing designs were falling short. Seeing the limitations in accessibility of the College Hill Independent's, or the Indy's, dropdown component,
+              I decided to redesign it using what I had learned from my research.
+            </p>
+                     
+          </div>
+
+          <div class="container mx-auto" id="process">
+            <h3>Process</h3>
+            <p>I created two state models of the Indy dropdown: one for mouse users and one for keyboard users. The original version only accounted for mouse input and lacked keyboard support almost entirely. Thus, I redeisgned both models to include accessible interaction pathways for all users.
+              To better support non-mouse users and screen readers:
+            </p>
+            <ol>
+              <li>I prioritized click-based triggers over hover-based ones (inspired by the VSCode dropdown component).</li>
+              <li>I introduced both mouse and keyboard expand/collase functionality (inspired by the Brown University dropdown component).</li>
+              <li>I added a clear focus order and consistent visual states.</li> 
+              <li>Used a two-column dropdown layout to reduce scrolling and increase readibility</li>
+             
+            </ol>
+            <div class="row justify-content-center text-center">
+              <p> <b>Original State Models</b> </p>
+              <div class="col-md-6 col-lg-5 mb-3">
+                <img src="assets/Indy/model_indy_keyboard.png" class="img-fluid w-100" alt="The Indy state model of keyboard interactions">
+              </div>
+              <div class="col-md-6 col-lg-5 mb-3">
+                <img src="assets/Indy/model_indy_mouse.png" class="img-fluid w-100" alt="The Indy state model of mouse interactions">
+              </div>
+            </div>
+
+            <div class="row justify-content-center text-center">
+              <p> <b>Redesigned State Models</b> </p>
+              <div class="col-md-6 col-lg-5 mb-3">
+                <img src="assets/Indy/model_revised_keyboard.png" class="img-fluid w-100" alt="The Indy revised state model of keyboard interactions">
+              </div>
+              <div class="col-md-6 col-lg-5 mb-3">
+                <img src="assets/Indy/model_revised_mouse.png" class="img-fluid w-100" alt="The Indy revised state model of keyboard interactions">
+              </div>
+            </div>
+          </div>
+
+          <div class="container mx-auto" id="solution">
+            <h3>Solution</h3>
+            <p>My final dropdown redesign addressed both input and output shortcomings. These changes were implemented in <i>Figma</i>, where I designed both the initial and expanded states of the dropdown.</p>
+            <p> Changes made:
+              <ul>
+                <li>Added arrows beside the dropdown headings to indicate whether the menu was collapsed/expanded</li>
+                <li>Changed hover-based actions to <b>click-based interactions</b></li>
+                <li>Added more <b>visible active/hover states</b> for subheadings</li>
+                <li>Limited the number of menu options to a two-column menu and added a "See All" option</li>
+              </ul>
+
+            </p>
+              <div class="text-center">
+                <div class="row justify-content-center text-center">
+                  <div class="col-md-10 col-lg-8 mb-4">
+                    <img src="assets/Indy/final1.png" class="img-fluid w-100" alt="The Indy final revised dropdown collapsed">
+                  </div>
+                  <div class="col-md-10 col-lg-8 mb-4">
+                    <img src="assets/Indy/final2.png" class="img-fluid w-100" alt="The Indy final revised dropdown expanded">
+                    
+                  </div>
+                  <br>
+                  Expand for full view of the Figma redesign
+
+                </div>
+              </div>
+              <iframe style="border: 1px solid rgba(0, 0, 0, 0.1);" width="800" height="450" alt="Embeded Figma Design" src="https://embed.figma.com/proto/nuZe5N7evUbJ4VB5eyuWnc/Untitled?page-id=0%3A1&node-id=7-5&viewport=-576%2C-305%2C0.49&scaling=min-zoom&content-scaling=fixed&starting-point-node-id=7%3A5&show-proto-sidebar=1&embed-host=share" allowfullscreen></iframe>
+          </div>
+          <br>
+          <div class="container mx-auto" id="learnings">
+            <h3>Learnings</h3>
+            <p>
+              This project helped me recognize how often UI components are <b>unintentionally designed in unaccessible manners </b>, like with the prioritization of mouse-first assumptions without taking into account users who use screen readers or purely keyboard input. I took this observation into account for my final design by implementing multiple ways to expand the menu, including click-based interactions.
+              My research and design process allowed me to realize the importance of <b>clear feedback to users</b>, <b>keyboard accessibility</b>, and <b>how memorability and learnability are tied to consistency </b>. In the future, I would love to develop my redesign and explore how other common components in the design process can be made more accessible.
+            </p>
+          </div>
+        </main>
+      </div>
+    </div>
+  </body>
+
+  <!-- Footer Section-->
+  <hr class="border-10" />
+  <footer class="container" id="footer">
+    <p> Designed on Figma, Developed on VSCode, Made with Love </p>
+  </footer>
+
+
+  <!-- Javascript for automatic slideshows-->
+  <script>
+    function carousel(slideshowClass) {
+      var slides = document.getElementsByClassName(slideshowClass);
+      var index = 0;
+
+      function showSlides() {
+        for (var i = 0; i < slides.length; i++) {
+          slides[i].style.display = "none";
+        }
+        index++;
+        if (index > slides.length) {
+          index = 1;
+        }
+        slides[index - 1].style.display = "block";
+        setTimeout(showSlides, 2000);
+      }
+      showSlides();
+    }
+    carousel("slide_ikea");
+    carousel("slide_brown");
+    carousel("slide_indy");
+
+    function showContent(section) {
+        let contents = document.querySelectorAll(".content");
+        let tabs = document.querySelectorAll(".tab");
+        contents.forEach((content) => content.classList.remove("active"));
+        tabs.forEach((tab) => tab.classList.remove("active"));
+        document.getElementById(section).classList.add("active");
+        document
+        .querySelector(`[onclick="showContent('${section}')"]`)
+        .classList.add("active");
+    }
+    let slideIndex = 0;
+    function showSlides(n) {
+      let slides = document.querySelectorAll(".slide");
+      slides.forEach((slide) => (slide.style.display = "none"));
+      slideIndex = (n + slides.length) % slides.length;
+      slides[slideIndex].style.display = "block";
+    }
+    function plusSlides(n) {
+      showSlides(slideIndex + n);
+    }
+    showSlides(slideIndex);
+  </script>
+</html>
