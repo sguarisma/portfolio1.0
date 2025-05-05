@@ -94,7 +94,7 @@ h1.typewriter {
 
 .tagline {
   font-size: 1.2rem;
-  color: #666;
+  color: #1c1c1c;
 }
 
 #topic1, #topic2, #topic3 {
@@ -153,7 +153,7 @@ h1.typewriter {
 
 .card-content p {
   font-size: 0.95rem;
-  color: #555;
+  color: #000000;
   margin-bottom: 12px;
 }
 
@@ -165,7 +165,7 @@ h1.typewriter {
 
 .tag {
   background-color: #bcd4ff;
-  color: #333;
+  color: #000000;
   font-size: 0.75rem;
   padding: 4px 10px;
   border-radius: 12px;

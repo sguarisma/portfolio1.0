@@ -88,7 +88,9 @@
           <h1 class="typewriter display-2">Hello! I'm Sofia</h1>
           <p class="tagline fw-bold mt-3">
               I am a  
-            <select class="form-select d-inline w-auto mx-1" id="roleSelect">
+            <label for="roleSelect" class="visually-hidden">Select a professional role</label>
+            <select class="form-select d-inline w-auto mx-1" id="roleSelect"
+            >
                 <option value="Full-Stack Developer">Full-Stack Developer</option>
                 <option value="Web Developer">Web Developer</option>
                 <option value="Sociologist">Sociologist</option>
@@ -103,9 +105,11 @@
           
           <p class="tagline">
             I like thinking about 
-            <b id="topic1" class="hover-highlight fw-bold">human-computer interaction</b>, 
-            <b id="topic2" class="hover-highlight fw-bold">tech ethics</b>, and 
-            <b id="topic3" class="hover-highlight fw-bold">user experience</b>.
+            <span id="topics" aria-live="polite">
+              <b id="topic1" class="hover-highlight fw-bold">human-computer interaction</b>, 
+              <b id="topic2" class="hover-highlight fw-bold">tech ethics</b>, and 
+              <b id="topic3" class="hover-highlight fw-bold">user experience</b>.
+            </span>
           </p>
           
           <a href="https://www.linkedin.com/in/sofia-guarisma-b683b1237/"><img class= "overlay-text img-fluid" src="assets/old_linkedin.png" alt="Retro Linkedin Logo"></a>
