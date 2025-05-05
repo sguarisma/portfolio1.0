@@ -127,3 +127,8 @@ b{
     font-weight: bolder;
     color: #9146ff;
 }
+
+.text-muted{
+    color: #9146ff;
+    background-color: #ffffff;
+}
